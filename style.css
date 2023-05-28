@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*Nagłówek*/
+.header{
+    background: linear-gradient(to right, #131313, #000);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header h1{
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.header span{
+    background: #283c86;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.header h2{
+    color: #45a247;
+    font-size: 3rem;
+    margin-bottom: 32px;
+}
+
+.main_btn{
+    background: #8360c3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 160px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+}
+
+.main_btn a {
+    color: #fff;
+    z-index: 3;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 30px 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.main_btn::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #8360c3;
+    transition: 0.3s ease;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+
+.main_btn:hover:after{
+    width: 100%;
+}
+
+/*Sekcja About*/
+
+.about{
+    background-color: #0a001f;
+    justify-content: center;
+    margin: 0 ;
+    width: 100%;
+    height: 90%;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container{
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.about-fruit-info{
+    margin-left:  60px;
+}
+
+.about-container h1{
+    font-size: 3rem;
+    font-weight: 700;
+    background: #134E5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.about-container h2{
+    font-size: 4rem;
+    background: #134E5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 32px;
+}
+
+.about-container p{
+    color: #fff;
+    font-size: 2rem;
+
+}
+
+.fruit-image{
+    height: 500px;
+    width: 500px;
+    margin: 50px 0;
+    background: #283c86;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 60px;
+}
+
+i{
+    color: #fff;
+    font-size: 12rem;
+}
+
+.about-car-info{
+    margin-right: 60px;
+}
+
+.about-container .about-car-info h1{
+    font-size: 3rem;
+    font-weight: 700;
+    background: #0052D4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.about-container .about-car-info h2{
+    font-size: 4rem;
+    background: #0052D4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 32px;
+}
+
+.about-container .about-car-info p{
+    color: #fff;
+    font-size: 2rem;
+
+}
+
+.about-car-info span {
+    background: #9D50BB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.car-image{
+    height: 500px;
+    width: 500px;
+    margin: 50px 0;
+    background: #0052D4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+}
+
+/*Sekcja Formularza*/
+.content{
+    background-color: #0a001f;
+    justify-content: center;
+    padding-top: 80px ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-container{
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+/*Kontenery Zakupowy*/
+
+.buy-section{
+    height: 800px;
+    width: 600px;
+    background: linear-gradient(#141e30, #243b55);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 25px ;
+}
+
+.buy-section h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-bottom: 72px;
+    color: #38ccae;
+}
+
+.buy-section p{
+    font-size: 3rem;
+    color: #38ccae;
+    font-weight: bold;
+}
+
+.buy-section span{
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+/*Święcący przycisk*/
+
+.buy-section button{
+    width: 350px;
+    margin-top: 64px;
+    padding: 16px 0;
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+    background: #38ccae;
+    background: linear-gradient(to right top, #38ccae, rgba(255,255,255,0.2));
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.buy-section button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.buy-section button:focus{
+    outline-color: #fff;
+}
+
+.buy-section button:after{
+    content: "";
+    background-color: rgba(255,255,255,0.4);
+    width: 50px;
+    height: 150%;
+    position: absolute;
+    left: -100px;
+    top: -25px;
+    transform: rotate(20deg);
+    transition: 0.3s transform;
+}
+
+.buy-section button:hover:after{
+    transform: translateX(500px) rotate(20deg);
+}
+
+/*Kontener formujlarza*/
+
+.form{
+    margin-left: 25px ;
+    height: 800px;
+    width: 600px;
+    background: linear-gradient(#141e30, #243b55);
+    border-radius: 5px;
+    
+}
+
+.form .title{
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 10px 10px;
+    z-index: 2;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form .sub-titles{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px 0 12px 0;
+}
+
+
+
+.data .input-box{
+    margin: 0 10px;
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.data .input-box .details{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.data .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px ;
+    transition: all 0.3s ease;
+}
+
+.data .input-box input:focus,
+.data .input-box input:valid{
+    border-color: #9b59b6;
+}
+
+.gender-title{
+    margin-top: 50px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category{
+    display: flex;
+    width: 80%;
+    margin: 16px 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category label{
+    display: flex;
+}
+
+.category .dot{
+    height: 18px;
+    width: 20px;
+    background: transparent;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 3px solid #38ccae;
+    transition: all 0.3s ease;
+}
+
+.addons{
+    
+    color: #fff;
+    font-weight: bold;
+}
+
+#dot-1:checked ~ .category .one,
+#dot-2:checked ~ .category .two,
+#dot-3:checked ~ .category .three{
+    background: #38ccae;
+    
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+.main-food{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+}
+
+.cake-box{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+
+}
+
+/*Checkbox Edycja*/
+
+input[type="checkbox"]{
+    height: 20px;
+    width: 20px;
+    appearance: none;
+    background-color: #d5d5d5;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px ;
+}
+
+.main-food label{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+input[type="checkbox"]:after{
+    font-family: "Font Awesome 5 free";
+    content: "\f00c";
+    font-weight: 900;
+    font-size: 18px;
+    color: #fff;
+    display: none;
+}
+
+input[type="checkbox"]:hover{
+    background-color: #a5a5a5;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #38ccae;
+}
+
+input[type="checkbox"]:checked:after{
+    display: block;
+}
+
+/*Przuciski*/
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.save-btn{
+    width: 200px;
+    font-size: 2rem;
+    padding: 20px 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: 0.3s ease;
+    font-weight: 700;
+    position: relative;
+    border: #38ccae 3px solid;
+}
+
+
+.clear-btn{
+    width: 200px;
+    font-size: 2rem;
+    padding: 20px 5px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: 0.5s ease-out;
+    font-weight: 700;
+    position: relative;
+    border: crimson 3px solid;
+}
+
+.save-btn:hover{
+    background-color: #38ccae;
+}
+
+.clear-btn:hover{
+    background-color: crimson;
+}
+
+
